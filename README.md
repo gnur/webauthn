@@ -12,13 +12,13 @@ An implementation of this library can be used at [webauthn.io](https://webauthn.
 
 Quickstart
 ----------
-`go get github.com/duo-labs/webauthn` and initialize it in your application with basic configuration values. 
+`go get github.com/duo-labs/webauthn/webauthn` and initialize it in your application with basic configuration values. 
 
 Make sure your `user` model is able to handle the interface functions laid out in `webauthn/user.go`. This means also supporting the storage and retrieval of the credential and authenticator structs in `webauthn/credential.go` and `webauthn/authenticator.go`, respectively.
 
 ### Initialize the request handler
 ```golang
-import "github.com/duo-labs/webauthn"
+import "github.com/duo-labs/webauthn/webauthn"
 
 var web webauthn.WebAuthn
 
