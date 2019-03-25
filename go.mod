@@ -1,4 +1,4 @@
-module github.com/duo-labs/webauthn
+module github.com/gnur/webauthn
 
 require (
 	github.com/google/go-tpm v0.1.0
