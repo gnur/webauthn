@@ -1,24 +1,24 @@
 WebAuthn Library
 =============
-[![GoDoc](https://godoc.org/github.com/duo-labs/webauthn?status.svg)](https://godoc.org/github.com/duo-labs/webauthn)
-[![Build Status](https://travis-ci.org/duo-labs/webauthn.svg?branch=master)](https://travis-ci.org/duo-labs/webauthn)
+[![GoDoc](https://godoc.org/github.com/gnur/webauthn?status.svg)](https://godoc.org/github.com/gnur/webauthn)
+[![Build Status](https://travis-ci.org/gnur/webauthn.svg?branch=master)](https://travis-ci.org/gnur/webauthn)
 
 This library is meant to handle [Web Authentication](https://w3c.github.io/webauthn) for Go apps that wish to implement a passwordless solution for users. While the specification is currently in Candidate Recommendation, this library conforms as much as possible to 
 the guidelines and implementation procedures outlined by the document.
 
 ### Demo at webauthn.io
-An implementation of this library can be used at [webauthn.io](https://webauthn.io) and the code for this website can be found in the Duo Labs repository [webauthn-io](https://github.com/duo-labs/webauthn.io).
+An implementation of this library can be used at [webauthn.io](https://webauthn.io) and the code for this website can be found in the Duo Labs repository [webauthn-io](https://github.com/gnur/webauthn.io).
 
 
 Quickstart
 ----------
-`go get github.com/duo-labs/webauthn/webauthn` and initialize it in your application with basic configuration values. 
+`go get github.com/gnur/webauthn/webauthn` and initialize it in your application with basic configuration values. 
 
 Make sure your `user` model is able to handle the interface functions laid out in `webauthn/user.go`. This means also supporting the storage and retrieval of the credential and authenticator structs in `webauthn/credential.go` and `webauthn/authenticator.go`, respectively.
 
 ### Initialize the request handler
 ```golang
-import "github.com/duo-labs/webauthn/webauthn"
+import "github.com/gnur/webauthn/webauthn"
 
 var web webauthn.WebAuthn
 
@@ -89,8 +89,8 @@ You can modify the default credential creation options for registration and logi
 You can modify the registration options in the following ways:
 ```golang
 // Wherever you handle your WebAuthn requests
-import "github.com/duo-labs/webauthn/protocol"
-import "github.com/duo-labs/webauthn"
+import "github.com/gnur/webauthn/protocol"
+import "github.com/gnur/webauthn"
 
 var webAuthnHandler webauthn.WebAuthn // init this in your init function
 
@@ -119,8 +119,8 @@ func beginRegistration() {
 You can modify the login options to allow only certain credentials:
 ```golang
 // Wherever you handle your WebAuthn requests
-import "github.com/duo-labs/webauthn/protocol"
-import "github.com/duo-labs/webauthn"
+import "github.com/gnur/webauthn/protocol"
+import "github.com/gnur/webauthn"
 
 var webAuthnHandler webauthn.WebAuthn // init this in your init function
 

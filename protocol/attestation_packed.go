@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/duo-labs/webauthn/protocol/webauthncose"
+	"github.com/gnur/webauthn/protocol/webauthncose"
 )
 
 var packedAttestationKey = "packed"

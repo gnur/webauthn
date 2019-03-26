@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/duo-labs/webauthn/protocol/webauthncose"
+	"github.com/gnur/webauthn/protocol/webauthncose"
 )
 
 // The raw response returned to us from an authenticator when we request a

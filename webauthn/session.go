@@ -1,7 +1,7 @@
 package webauthn
 
 import (
-	"github.com/duo-labs/webauthn/protocol"
+	"github.com/gnur/webauthn/protocol"
 )
 
 type SessionData struct {
